@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "157d55c6b1e33fa74a90da6c8b83c489"
+build_time: [1624349092, 327028000]
+inputs:
+  "/Users/ayeshazafar/Desktop/menu/macos/Runner/MainFlutterWindow.swift": [1623437044, 0]
+  "/Users/ayeshazafar/Desktop/menu/macos/Runner/AppDelegate.swift": [1623437044, 0]
+  "/Users/ayeshazafar/Desktop/menu/macos/Flutter/GeneratedPluginRegistrant.swift": [1624349082, 649239117]
