@@ -1,0 +1,4 @@
+#Thu Jul 01 15:17:21 PKT 2021
+base.0=/Users/ayeshazafar/Desktop/menu/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
