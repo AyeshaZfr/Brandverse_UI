@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // STATELESS WIDGET
 class CardCatalouge extends StatelessWidget {
-  CardCatalouge(this.category);
+  const CardCatalouge(this.category);
   final String category;
   @override
   Widget build(BuildContext context) {
