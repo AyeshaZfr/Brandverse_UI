@@ -8,24 +8,39 @@ class BuildContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 90,
-        width: MediaQuery.of(context).size.width / 4,
+        margin: EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: Colors.orange,
+          color: isActive ? Colors.orange[300] : null,
+          borderRadius: BorderRadius.circular(15),
         ),
-        child: Container(
-            margin: EdgeInsets.all(15),
-            decoration: BoxDecoration(
-              color: isActive ? Colors.deepOrange : null,
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: IconButton(
-              onPressed: null,
-              icon: Icon(
-                icon,
-                color: Colors.white,
-              ),
-              iconSize: 30,
-            )));
+        child: IconButton(
+          onPressed: null,
+          icon: Icon(
+            icon,
+            color: Colors.white,
+          ),
+          iconSize: 32,
+        ));
   }
 }
+
+// return Container(
+//         height: 90,
+//         width: MediaQuery.of(context).size.width / 4,
+//         decoration: BoxDecoration(
+//           color: Colors.orange,
+//         ),
+//         child: Container(
+//             margin: EdgeInsets.all(15),
+//             decoration: BoxDecoration(
+//               color: isActive ? Colors.deepOrange : null,
+//               borderRadius: BorderRadius.circular(15),
+//             ),
+//             child: IconButton(
+//               onPressed: null,
+//               icon: Icon(
+//                 icon,
+//                 color: Colors.white,
+//               ),
+//               iconSize: 30,
+//             )));

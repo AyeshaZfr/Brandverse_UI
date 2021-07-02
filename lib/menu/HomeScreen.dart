@@ -69,12 +69,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   )))
         ],
       ),
-      bottomNavigationBar: Row(
-        children: <Widget>[
-          BuildContainer(Icons.home, true),
-          BuildContainer(Icons.search, false),
-          BuildContainer(Icons.format_shapes, false),
-          BuildContainer(Icons.person, false)
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedFontSize: 0,
+        unselectedFontSize: 0,
+        backgroundColor: Colors.orange[600],
+        currentIndex: 0,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: BuildContainer(Icons.home, true),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: BuildContainer(Icons.search, false),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: BuildContainer(Icons.format_shapes, false),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: BuildContainer(Icons.person, false),
+            label: '',
+          ),
         ],
       ),
     );

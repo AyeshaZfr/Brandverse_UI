@@ -12,14 +12,14 @@ class CardCatalouge extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(right: 90),
+            margin: EdgeInsets.only(right: 60),
             height: 25,
-            width: 100,
+            width: 80,
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
                   color: color,
-                  width: 3,
+                  width: 3.5,
                 ),
               ),
             ),
