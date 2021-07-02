@@ -1,27 +1,7 @@
 import 'package:flutter/material.dart';
 import 'cardTheme.dart';
-// import 'bottomNavBar.dart';
 
 ThemeData theme = ThemeData(
-  fontFamily: "Roboto",
-  primarySwatch: Colors.grey,
-  // appBarTheme: appBarTheme,
   backgroundColor: Colors.white,
-  hintColor: Colors.grey.withOpacity(0.8),
-  errorColor: Colors.red,
-  focusColor: Colors.green,
-  primaryColorDark: Colors.black,
-  // scaffoldBackgroundColor: backgroundGrey,
-  floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: Colors.white, foregroundColor: Colors.grey),
-  buttonColor: Colors.grey,
-  // inputDecorationTheme: inputDecorationTheme,
   cardTheme: cardTheme,
-  accentColor: Colors.grey,
-  disabledColor: Colors.black26,
-  dividerColor: Colors.grey,
-  // bottomNavigationBarTheme: bottomNavigationBarTheme,
-  buttonTheme: ButtonThemeData(
-      shape: RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(20.0))),
 );
