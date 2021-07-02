@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Card.dart';
-import 'AppBar.dart';
 import 'BottomNavBar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,8 +13,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: CustomAppBar(),
-
       appBar: AppBar(
         centerTitle: false,
         title: Text(

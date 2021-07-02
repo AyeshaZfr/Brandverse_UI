@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BuildContainer extends StatelessWidget {
@@ -30,26 +29,3 @@ class BuildContainer extends StatelessWidget {
             )));
   }
 }
-
-// Container buildContainer(IconData icon, bool isActive) {
-//   return Container(
-//       height: 90,
-//       width: MediaQuery.of(context).size.width / 4,
-//       decoration: BoxDecoration(
-//         color: Colors.orange,
-//       ),
-//       child: Container(
-//           margin: EdgeInsets.all(15),
-//           decoration: BoxDecoration(
-//             color: isActive ? Colors.deepOrange : null,
-//             borderRadius: BorderRadius.circular(15),
-//           ),
-//           child: IconButton(
-//             onPressed: null,
-//             icon: Icon(
-//               icon,
-//               color: Colors.white,
-//             ),
-//             iconSize: 30,
-//           )));
-// }

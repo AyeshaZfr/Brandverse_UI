@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// STATELESS WIDGET
 class CardCatalouge extends StatelessWidget {
   final String category;
   final Color color;
