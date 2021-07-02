@@ -2,21 +2,39 @@ import 'package:flutter/material.dart';
 
 // STATELESS WIDGET
 class CardCatalouge extends StatelessWidget {
-  const CardCatalouge(this.category);
   final String category;
+  final Color color;
+  const CardCatalouge(this.category, this.color);
+
   @override
   Widget build(BuildContext context) {
     return Card(
       shape: Theme.of(context).cardTheme.shape,
       child: Column(
         children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(right: 90),
+            height: 25,
+            width: 100,
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: color,
+                  width: 3,
+                ),
+              ),
+            ),
+          ),
           Image(
-            image: AssetImage('assets/images/cart.png'),
-            height: 128,
+            image: AssetImage(
+              'assets/images/cart.png',
+            ),
+            height: 110,
+            color: Colors.black.withOpacity(0.3),
           ),
           Text(
             category,
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
         ],
       ),
