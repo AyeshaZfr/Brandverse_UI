@@ -38,37 +38,32 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
         backgroundColor: Colors.white,
       ),
-      body: Stack(
-        children: <Widget>[
-          SafeArea(
-              child: Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Column(
-                    children: <Widget>[
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        height: 25,
-                      ),
-                      Flexible(
-                        child: GridView.count(
-                          mainAxisSpacing: 10,
-                          crossAxisSpacing: 10,
-                          primary: false,
-                          children: <Widget>[
-                            CardCatalouge('MEN', const Color(0xFFFFC100)),
-                            CardCatalouge('WOMEN', const Color(0xFF91FAFF)),
-                            CardCatalouge('KIDS', const Color(0xFF00D1FF)),
-                            CardCatalouge('SPORTS', const Color(0xFFf0BCFF)),
-                            CardCatalouge(
-                                'ACCESSORIES', const Color(0xF9009BEE)),
-                          ],
-                          crossAxisCount: 2,
-                        ),
-                      )
-                    ],
-                  )))
-        ],
-      ),
+      body: SafeArea(
+          child: Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 25,
+                  ),
+                  Flexible(
+                    child: GridView.count(
+                      mainAxisSpacing: 10,
+                      crossAxisSpacing: 10,
+                      primary: false,
+                      children: <Widget>[
+                        CardCatalouge('MEN', const Color(0xFFFFC100)),
+                        CardCatalouge('WOMEN', const Color(0xFF91FAFF)),
+                        CardCatalouge('KIDS', const Color(0xFF00D1FF)),
+                        CardCatalouge('SPORTS', const Color(0xFFf0BCFF)),
+                        CardCatalouge('ACCESSORIES', const Color(0xF9009BEE)),
+                      ],
+                      crossAxisCount: 2,
+                    ),
+                  )
+                ],
+              ))),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         selectedFontSize: 0,
